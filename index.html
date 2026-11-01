@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tunexa – Upload, play and share your sound</title>
+<meta name="description" content="Tunexa is the music app for uploading your own tracks, building playlists, and keeping your favorites one tap away. Free for Android.">
+<meta name="theme-color" content="#5b21b6">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tunexa – Your sound, all in one place">
+<meta property="og:description" content="Upload tracks, build playlists and keep every favorite one tap away.">
+<meta property="og:image" content="https://YOUR-DOMAIN.vercel.app/images/og-image.png">
+<meta property="og:url" content="https://YOUR-DOMAIN.vercel.app/">
+<link rel="apple-touch-icon" href="images/favicon.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:text-black focus:p-3 focus:rounded">Skip to content</a>
+
+<header class="sticky z-40 backdrop-blur-lg" style="top:env(safe-area-inset-top,0px);background:color-mix(in srgb,var(--bg) 82%,transparent);border-bottom:1px solid var(--line)">
+  <nav class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between" aria-label="Main">
+    <a href="#top" class="brand flex items-center gap-2 text-xl font-bold" aria-label="Tunexa home"><img src="images/logo.png" alt="Tunexa" width="201" height="180" class="h-11 w-auto"></a>
+    <ul id="links" class="hidden md:flex items-center gap-7 font-medium mut">
+      <li><a href="#features" class="hover:text-[var(--fg)]">Features</a></li>
+      <li><a href="#how" class="hover:text-[var(--fg)]">How it works</a></li>
+      <li><a href="#screens" class="hover:text-[var(--fg)]">Screens</a></li>
+      <li><a href="#pricing" class="hover:text-[var(--fg)]">Pricing</a></li>
+      <li><a href="#faq" class="hover:text-[var(--fg)]">FAQ</a></li>
+    </ul>
+    <div class="flex items-center gap-2">
+      <a href="#download" class="btn btn-grad !py-2 !px-4 text-sm">Download App</a>
+      <button id="menu" class="md:hidden btn btn-ghost !p-2" aria-expanded="false" aria-controls="links" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<section id="top" class="relative overflow-hidden">
+  <div aria-hidden="true" class="absolute -top-40 -right-32 w-[34rem] h-[34rem] rounded-full opacity-25 blur-3xl grad-bg"></div>
+  <div class="max-w-6xl mx-auto px-5 pt-14 pb-20 md:pt-20 grid md:grid-cols-2 gap-12 items-center relative">
+    <div>
+      <p class="inline-flex items-center gap-2 text-sm font-bold px-3 py-1 rounded-full" style="background:var(--tint);color:#6d28d9"><span class="w-2 h-2 rounded-full bg-green-500"></span>Free on Android</p>
+      <h1 class="brand text-5xl sm:text-6xl lg:text-7xl font-extrabold mt-5"><span style="background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent">Tunexa.</span><br>Your sound, all in one place.</h1>
+      <p class="mut text-lg mt-6 max-w-md">Upload your own tracks, build playlists, and keep every favorite one tap away. Music that’s organized the way you actually listen.</p>
+      <div id="download" class="flex flex-wrap gap-3 mt-8">
+        <a href="#" class="store" aria-label="Download on the App Store"><svg width="26" height="26" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9s-1.8-.8-3-.8c-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.700 2.400 2.900 2.300 1.200 0 1.600-.7 3-.7s1.800.7 3 .7 2-1.100 2.800-2.200c.9-1.300 1.200-2.500 1.200-2.600-.1 0-2.400-.9-2.400-3.900zM14.100 5.700c.6-.8 1.100-1.800.9-2.900-.9 0-2 .6-2.700 1.400-.6.700-1.100 1.800-1 2.800 1 .1 2.100-.5 2.800-1.300z"/></svg><span><small>Download on the</small><b>App Store</b></span></a>
+        <a href="#" class="store" aria-label="Get it on Google Play"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2.500v19l10-9.500z" fill="#38bdf8"/><path d="M14 12l3.200-3.200L5.500 2.200C5 1.900 4.400 2 4 2.500z" fill="#4ade80"/><path d="M14 12l3.200 3.200-11.700 6.600c-.5.300-1.100.2-1.500-.3z" fill="#f43f5e"/><path d="M17.200 8.800L14 12l3.200 3.200 3.500-2c.9-.5.900-1.900 0-2.400z" fill="#facc15"/></svg><span><small>Get it on</small><b>Google Play</b></span></a>
+      </div>
+    </div>
+    <div class="relative flex justify-center items-center min-h-[30rem]">
+      <div class="phone drift absolute hidden sm:block" style="width:12.5rem;right:2%;top:14%" aria-hidden="true"><img src="images/screens/home-dark.webp" alt="" width="270" height="606"></div>
+      <div class="phone relative" style="width:15rem;margin-right:6rem"><img src="images/screens/home-light.webp" alt="Tunexa home screen with recent tracks and fresh drops" width="270" height="606" fetchpriority="high"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="py-20" style="background:var(--tint)">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="rv max-w-xl"><h2 class="brand text-4xl sm:text-5xl font-bold">Everything your music needs. Nothing it doesn’t.</h2>
+    <p class="mut mt-4">Simple tools that stay out of the way, so you can get back to listening.</p></div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
+      <article class="card p-6 rv"><span class="ico"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 16V4m0 0l-4 4m4-4l4 4M4 16v3a1 1 0 001 1h14a1 1 0 001-1v-3"/></svg></span><h3 class="brand text-xl font-bold mt-4">Upload your own tracks</h3><p class="mut mt-2">Add audio, cover art and a description in one screen. Pick a category and you’re live.</p></article>
+      <article class="card p-6 rv"><span class="ico"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" viewBox="0 0 24 24"><path d="M4 6h12M4 11h12M4 16h7"/><circle cx="17" cy="17" r="3"/><path d="M20 17V8"/></svg></span><h3 class="brand text-xl font-bold mt-4">Playlists, public or private</h3><p class="mut mt-2">Group tracks into playlists and choose who can see them.</p></article>
+      <article class="card p-6 rv"><span class="ico"><svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21s-8-5.2-8-11a4.500 4.500 0 018-2.800A4.500 4.500 0 0120 10c0 5.800-8 11-8 11z"/></svg></span><h3 class="brand text-xl font-bold mt-4">Favorites in one tap</h3><p class="mut mt-2">Tap the heart from the player or the queue. Your favorites tab is always up to date.</p></article>
+      <article class="card p-6 rv"><span class="ico"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><h3 class="brand text-xl font-bold mt-4">Listening history</h3><p class="mut mt-2">Everything you played, grouped by day. Long press to remove several at once.</p></article>
+      <article class="card p-6 rv"><span class="ico"><svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M6 5l9 7-9 7zM17 5h2v14h-2z"/></svg></span><h3 class="brand text-xl font-bold mt-4">A player with full control</h3><p class="mut mt-2">Seek, skip, jump back or forward, change speed, and manage your playing queue.</p></article>
+      <article class="card p-6 rv"><span class="ico"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" viewBox="0 0 24 24"><path d="M21 12.800A9 9 0 1111.200 3a7 7 0 009.800 9.800z"/></svg></span><h3 class="brand text-xl font-bold mt-4">Light, dark or auto</h3><p class="mut mt-2">Easy on the eyes day and night. Tunexa follows your phone, or you pick.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" class="py-20">
+  <div class="max-w-6xl mx-auto px-5 grid lg:grid-cols-2 gap-14 items-center">
+    <div>
+      <h2 class="brand text-4xl sm:text-5xl font-bold rv">From sign-up to first play in three steps</h2>
+      <ol class="mt-10 space-y-8">
+        <li class="flex gap-5 rv"><span class="ico flex-none brand font-bold text-lg">1</span><div><h3 class="brand text-xl font-bold">Create your account</h3><p class="mut mt-1">Sign up with your email and verify it. Your profile is ready in seconds.</p></div></li>
+        <li class="flex gap-5 rv"><span class="ico flex-none brand font-bold text-lg">2</span><div><h3 class="brand text-xl font-bold">Add your music</h3><p class="mut mt-1">Upload tracks with artwork, or explore what’s trending on the Home tab.</p></div></li>
+        <li class="flex gap-5 rv"><span class="ico flex-none brand font-bold text-lg">3</span><div><h3 class="brand text-xl font-bold">Press play, keep what you love</h3><p class="mut mt-1">Heart your favorites and build playlists. Tunexa remembers the rest.</p></div></li>
+      </ol>
+    </div>
+    <div class="flex justify-center gap-5 rv">
+      <div class="phone" style="width:13.5rem"><img src="images/screens/now-playing-light.webp" alt="Now playing screen with seek bar, speed control and queue button" width="270" height="606" loading="lazy"></div>
+      <div class="phone hidden sm:block mt-12" style="width:13.5rem"><img src="images/screens/queue-light.webp" alt="Playing queue with three tracks" width="270" height="606" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SCREENSHOTS -->
+<section id="screens" class="py-20" style="background:var(--tint)">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="flex flex-wrap items-end justify-between gap-5">
+      <div class="rv"><h2 class="brand text-4xl sm:text-5xl font-bold">See Tunexa in action</h2><p class="mut mt-3">Looks great in both themes.</p></div>
+      <div class="flex items-center gap-3">
+        <div class="seg card p-1 flex" role="group" aria-label="Screenshot theme"><button id="tl" aria-pressed="true">Light</button><button id="td" aria-pressed="false">Dark</button></div>
+        <button class="btn btn-ghost !p-3" id="prev" aria-label="Previous screens">‹</button>
+        <button class="btn btn-ghost !p-3" id="next" aria-label="Next screens">›</button>
+      </div>
+    </div>
+    <div id="track" class="track" tabindex="0" role="region" aria-label="App screenshots, scroll horizontally"></div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="px-5 pb-20">
+  <div class="max-w-4xl mx-auto grad-bg text-white rounded-[2rem] p-10 sm:p-14 text-center rv">
+    <h2 class="brand text-4xl sm:text-5xl font-bold">It’s free. Really.</h2>
+    <p class="mt-4 opacity-90 max-w-lg mx-auto">Upload, stream, make playlists and favorite everything at no cost. No ads between your tracks, no card required.</p>
+    <a href="#download" class="btn mt-8" style="background:#fff;color:#4338ca">Get Tunexa free</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-20" style="background:var(--tint)">
+  <div class="max-w-3xl mx-auto px-5">
+    <h2 class="brand text-4xl sm:text-5xl font-bold rv">Questions, answered</h2>
+    <div class="mt-10 card px-6 rv">
+      <details open><summary>Is Tunexa really free?</summary><p class="mut pb-5">Yes. Every feature in the app is free to use. Replace this answer if you add paid plans later.</p></details>
+      <details><summary>Which devices does Tunexa support?</summary><p class="mut pb-5">Tunexa is available for Android today, and an iOS version is on the way. Update this once it’s live.</p></details>
+      <details><summary>What audio formats can I upload?</summary><p class="mut pb-5">Common formats like MP3 and AAC work great. Add your exact limits (file size, formats) here.</p></details>
+      <details><summary>Can I make my playlists private?</summary><p class="mut pb-5">Yes. Each playlist can be public or private, and you can change it any time.</p></details>
+      <details><summary>How do I delete my listening history?</summary><p class="mut pb-5">Long press tracks in History to remove several, or use “Clear All History” in Settings.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section id="newsletter" class="py-20">
+  <div class="max-w-2xl mx-auto px-5 text-center rv">
+    <h2 class="brand text-4xl font-bold">New drops, straight to your inbox</h2>
+    <p class="mut mt-3">Product updates and tips. One email a month, unsubscribe any time.</p>
+    <form id="nl" class="mt-8 flex flex-col sm:flex-row gap-3" novalidate>
+      <label for="em" class="sr-only">Email address</label>
+      <input id="em" type="email" required placeholder="you@example.com" autocomplete="email" class="flex-1 rounded-full px-5 py-3 card">
+      <button class="btn btn-grad justify-center" type="submit">Subscribe</button>
+    </form>
+    <p id="nlmsg" class="mt-4 font-medium" role="status" aria-live="polite"></p>
+  </div>
+</section>
+</main>
+
+<footer style="border-top:1px solid var(--line)">
+  <div class="max-w-6xl mx-auto px-5 py-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div><a href="#top" aria-label="Tunexa home"><img src="images/logo.png" alt="Tunexa" width="201" height="180" class="h-14 w-auto"></a><p class="mut mt-3 text-sm max-w-xs">Upload, play and share your sound.</p></div>
+    <nav aria-label="Product"><h3 class="font-bold">Product</h3><ul class="mut mt-3 space-y-2 text-sm"><li><a href="#features">Features</a></li><li><a href="#screens">Screens</a></li><li><a href="#pricing">Pricing</a></li></ul></nav>
+    <nav aria-label="Company"><h3 class="font-bold">Support</h3><ul class="mut mt-3 space-y-2 text-sm"><li><a href="#faq">FAQ</a></li><li><a href="mailto:hello@tunexa.example">Contact</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul></nav>
+    <div><h3 class="font-bold">Follow us</h3><div class="flex gap-3 mt-3">
+      <a href="#" aria-label="Instagram" class="ico" style="width:2.4rem;height:2.4rem"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.500" cy="6.500" r="1" fill="currentColor"/></svg></a>
+      <a href="#" aria-label="X" class="ico" style="width:2.4rem;height:2.4rem"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18.200 3h3l-6.600 7.600L22.400 21h-6l-4.700-6.200L6.300 21h-3l7-8.100L2.800 3h6.200l4.300 5.700zm-1 16.200h1.700L8 4.700H6.200z"/></svg></a>
+      <a href="#" aria-label="YouTube" class="ico" style="width:2.4rem;height:2.4rem"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M21.600 7.200a2.500 2.500 0 00-1.800-1.800C18.200 5 12 5 12 5s-6.200 0-7.800.4A2.500 2.500 0 002.400 7.200C2 8.800 2 12 2 12s0 3.200.4 4.800a2.500 2.500 0 001.800 1.800C5.800 19 12 19 12 19s6.200 0 7.800-.4a2.500 2.500 0 001.800-1.800c.4-1.600.4-4.800.4-4.800s0-3.200-.4-4.800zM10 15V9l5.200 3z"/></svg></a>
+    </div></div>
+  </div>
+  <p class="mut text-sm text-center pb-8">© <span id="yr">2026</span> Tunexa. All rights reserved.</p>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
