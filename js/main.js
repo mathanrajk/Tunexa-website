@@ -1,19 +1,21 @@
+/** @type {Record<string, string>} */
 const IMG={
- "L1": "images/screens/profile-light.webp",
- "L2": "images/screens/playlists-light.webp",
- "L3": "images/screens/favorites-light.webp",
- "L4": "images/screens/history-light.webp",
- "L6": "images/screens/now-playing-light.webp",
- "L7": "images/screens/queue-light.webp",
- "L10": "images/screens/home-light.webp",
- "L11": "images/screens/upload-light.webp",
- "D2": "images/screens/profile-dark.webp",
- "D3": "images/screens/playlists-dark.webp",
- "D4": "images/screens/favorites-dark.webp",
- "D5": "images/screens/history-dark.webp",
- "D6": "images/screens/upload-dark.webp",
- "D7": "images/screens/home-dark.webp"
+ "L1": "images/screens/profile-light.jpg",
+ "L2": "images/screens/playlists-light.jpg",
+ "L3": "images/screens/favorites-light.jpg",
+ "L4": "images/screens/history-light.jpg",
+ "L6": "images/screens/now-playing-light.jpg",
+ "L7": "images/screens/queue-light.jpg",
+ "L10": "images/screens/home-light.jpg",
+ "L11": "images/screens/upload-light.jpg",
+ "D2": "images/screens/profile-dark.jpg",
+ "D3": "images/screens/playlists-dark.jpg",
+ "D4": "images/screens/favorites-dark.jpg",
+ "D5": "images/screens/history-dark.jpg",
+ "D6": "images/screens/upload-dark.jpg",
+ "D7": "images/screens/home-dark.jpg"
 };
+/** @type {Array<[name: string, lightKey: string, darkKey: string]>} */
 const S=[["Home","L10","D7"],["Upload","L11","D6"],["Profile","L1","D2"],["Playlists","L2","D3"],["Favorites","L3","D4"],["History","L4","D5"]];
 const tr=document.getElementById('track');
 tr.innerHTML=S.map(s=>`<figure><div class="phone"><img data-l="${s[1]}" data-d="${s[2]}" alt="Tunexa ${s[0]} screen" width="270" height="606" loading="lazy"></div><figcaption class="text-center font-bold mt-4">${s[0]}</figcaption></figure>`).join('');
